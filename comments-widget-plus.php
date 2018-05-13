@@ -4,7 +4,7 @@
  * Plugin URI:   https://github.com/satrya/comments-widget-plus
  * Description:  Enables custom recent comments widget with extra features.
  * Version:      1.0.7
- * Author:       Theme Junkie
+ * Author:       Satrya
  * Author URI:   https://satrya.me/
  * Author Email: satrya@satrya.me
  * Text Domain:  comments-widget-plus
