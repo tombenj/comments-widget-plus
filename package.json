@@ -1,0 +1,20 @@
+{
+  "name": "comments-widget-plus",
+  "version": "1.0.6",
+  "author": "Theme Junkie",
+  "homepage": "https://www.theme-junkie.com/",
+  "licenses": [
+    {
+      "type": "GPL",
+      "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-wp-i18n": "^1.0.0",
+    "jit-grunt": "^0.10.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-compress": "^1.4.3",
+    "grunt-contrib-copy": "^1.0.0"
+  }
+}
