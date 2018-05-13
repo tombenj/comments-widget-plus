@@ -1,9 +1,9 @@
 === Comments Widget Plus ===
-Contributors: themejunkie, satrya
+Contributors: satrya, themejunkie
 Tags: recent comments, widget, recent comments widget, excerpt, avatar, sidebar, comments, pingback, trackback
 Requires at least: 4.0
-Tested up to: 4.8.2
-Stable tag: 1.0.6
+Tested up to: 4.9.5
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,7 @@ Please take a look the plugin page for more details: [https://www.theme-junkie.c
 
 = Contribute =
 
-If you want to contribute, we hosted the plugin on github: [https://github.com/themejunkie/comments-widget-plus](https://github.com/themejunkie/comments-widget-plus)
+If you want to contribute, we hosted the plugin on github: [https://github.com/satrya/comments-widget-plus](https://github.com/satrya/comments-widget-plus)
 
 == Installation ==
 
@@ -76,31 +76,10 @@ add_filter( 'cwp_use_default_style', '__return_false' );
 
 == Changelog ==
 
+= 1.0.7 - May 13, 2018 =
+* Maintenance update
+* Fixed exclude ping somehow not working
+* Support live preview in Customizer
+
 = 1.0.6 - Oct 19, 2017 =
 * Support WordPress 4.8.2
-
-= 1.0.5 - Sept 11, 2016 =
-* Support WordPress 4.6.1
-
-= 1.0.4 - Dec 19, 2015 =
-* Support WordPress 4.4
-* Added German translation
-
-= 1.0.3 - Nov 06, 2015 =
-- Improve the jQuery tabs performance
-- Better security, sanitize all outputs
-- Updated language file
-
-= 1.0.2 - Oct 11, 2015 =
-- Added French translation. Thanks [Adrien](https://github.com/Adrien-Luxey)
-- Added flexible per widget hook for developer
-- Updated language file
-- New features: Exclude pingback & trackback
-- New features: Avatar type, square / rounded
-
-= 1.0.1 - Oct 7, 2015 =
-- Added default color to the comment excerpt
-- Added class `cwp-on-text` to the On text
-
-= 1.0.0 - Sept 20, 2015 =
-- Initial release

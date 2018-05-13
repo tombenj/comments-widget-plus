@@ -1,12 +1,12 @@
 <?php
 /**
  * Plugin Name:  Comments Widget Plus
- * Plugin URI:   https://www.theme-junkie.com/plugins/comments-widget-plus/
+ * Plugin URI:   https://github.com/satrya/comments-widget-plus
  * Description:  Enables custom recent comments widget with extra features.
- * Version:      1.0.6
+ * Version:      1.0.7
  * Author:       Theme Junkie
- * Author URI:   https://www.theme-junkie.com/
- * Author Email: support@theme-junkie.com
+ * Author URI:   https://satrya.me/
+ * Author Email: satrya@satrya.me
  * Text Domain:  comments-widget-plus
  * Domain Path:  /languages
  * License:      GPL 2.0

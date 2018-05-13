@@ -112,7 +112,7 @@ function cwp_get_comments( $args, $id ) {
 	);
 
 	if ( $args['exclude_pings'] == 1 ) {
-		$query['type__not_in'] = 'pings';
+		$query['type__not_in'] = array( 'pings' );
 	}
 
 	// Allow plugins/themes developer to filter the default comment query.

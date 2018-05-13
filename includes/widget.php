@@ -16,7 +16,8 @@ class Comments_Widget_Plus_Widget extends WP_Widget {
 		// Set up the widget options.
 		$widget_options = array(
 			'classname'   => 'widget_recent_comments comments_widget_plus',
-			'description' => __( 'A custom recent comments widget with extra features.', 'comments-widget-plus' )
+			'description' => __( 'A custom recent comments widget with extra features.', 'comments-widget-plus' ),
+			'customize_selective_refresh' => true
 		);
 
 		// Control the width and height
