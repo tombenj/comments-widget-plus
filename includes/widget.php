@@ -16,7 +16,7 @@ class Comments_Widget_Plus_Widget extends WP_Widget {
 		// Set up the widget options.
 		$widget_options = array(
 			'classname'   => 'widget_recent_comments comments_widget_plus',
-			'description' => __( 'A custom recent comments widget with extra features.', 'comments-widget-plus' ),
+			'description' => esc_html__( 'A custom recent comments widget with extra features.', 'comments-widget-plus' ),
 			'customize_selective_refresh' => true
 		);
 
@@ -27,10 +27,10 @@ class Comments_Widget_Plus_Widget extends WP_Widget {
 
 		// Create the widget
 		parent::__construct(
-			'cwp-widget',                                         // $this->id_base
-			__( 'Recent Comments Plus', 'comments-widget-plus' ), // $this->name
-			$widget_options,                                      // $this->widget_options
-			$control_options                                      // $this->control_options
+			'cwp-widget',                                                 // $this->id_base
+			esc_html__( 'Recent Comments Plus', 'comments-widget-plus' ), // $this->name
+			$widget_options,                                              // $this->widget_options
+			$control_options                                              // $this->control_options
 		);
 		$this->alt_option_name = 'cwp_widget';
 

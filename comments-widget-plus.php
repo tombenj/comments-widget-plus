@@ -1,12 +1,12 @@
 <?php
 /**
  * Plugin Name:  Comments Widget Plus
- * Plugin URI:   https://github.com/satrya/comments-widget-plus
+ * Plugin URI:   https://github.com/idenovasi/comments-widget-plus
  * Description:  Enables custom recent comments widget with extra features.
- * Version:      1.0.7
+ * Version:      1.0.8
  * Author:       Satrya
- * Author URI:   https://satrya.me/
- * Author Email: satrya@satrya.me
+ * Author URI:   https://idenovasi.com/
+ * Author Email: satrya@idenovasi.com
  * Text Domain:  comments-widget-plus
  * Domain Path:  /languages
  * License:      GPL 2.0
@@ -42,6 +42,9 @@ if ( ! class_exists( 'Comments_Widget_Plus' ) ) {
 			// Loads admin style & script.
 			add_action( 'admin_enqueue_scripts', array( &$this, 'admin_scripts' ) );
 			add_action( 'customize_controls_enqueue_scripts', array( &$this, 'admin_scripts' ) );
+
+			// Loads frontend style.
+			add_action( 'wp_enqueue_scripts', array( &$this, 'frontend_scripts' ) );
 
 		}
 
@@ -102,6 +105,15 @@ if ( ! class_exists( 'Comments_Widget_Plus' ) ) {
 		public function admin_scripts() {
 			wp_enqueue_style( 'cwp-admin-style', trailingslashit( CWP_ASSETS ) . 'css/cwp-admin.css' );
 			wp_enqueue_script( 'cwp-admin-script', trailingslashit( CWP_ASSETS ) . 'js/cwp-admin.js', array( 'jquery-ui-tabs' ) );
+		}
+
+		/**
+		 * Loads frontend style.
+		 *
+		 * @since  1.0.0
+		 */
+		public function frontend_scripts() {
+			wp_enqueue_style( 'cwp-style', trailingslashit( CWP_ASSETS ) . 'css/cwp.css' );
 		}
 
 	}

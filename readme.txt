@@ -1,9 +1,9 @@
-=== Comments Widget Plus ===
-Contributors: satrya, themejunkie
+=== Recent Comments Widget Plus ===
+Contributors: idenovasi, satrya
 Tags: recent comments, widget, recent comments widget, excerpt, avatar, sidebar, comments, pingback, trackback
 Requires at least: 4.0
-Tested up to: 4.9.5
-Stable tag: 1.0.7
+Tested up to: 5.1
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,9 +11,7 @@ Provides custom recent comments widget with extra features such as display avata
 
 == Description ==
 
-This plugin will enable a custom and advanced recent comments widget. Allows you to display a list of the most recent comments with avatar and excerpt, you can also choose which to show newer comments first or older comments first and choose comments from any post type.
-
-Please take a look the plugin page for more details: [https://www.theme-junkie.com/plugins/comments-widget-plus/](https://www.theme-junkie.com/plugins/comments-widget-plus/)
+This plugin will enable a custom and advanced **recent comments widget**. Allows you to display a list of the most recent comments with avatar and excerpt, you can also choose which to show newer comments first or older comments first and choose comments from any post type.
 
 = Features Include =
 
@@ -27,15 +25,12 @@ Please take a look the plugin page for more details: [https://www.theme-junkie.c
 * Custom CSS class.
 * Multiple widgets.
 
-= Languages =
+= Support Me =
 
-* English
-* French
-* German
-
-= Contribute =
-
-If you want to contribute, we hosted the plugin on github: [https://github.com/satrya/comments-widget-plus](https://github.com/satrya/comments-widget-plus)
+* Purchase or download my [WordPress themes](https://wp.idenovasi.com/).
+* Purchase my [Services](https://www.fiverr.com/idenovasi).
+* Try another [WordPress plugin](https://profiles.wordpress.org/idenovasi/#content-plugins) from me.
+* Contribute on [Github](https://github.com/idenovasi/comments-widget-plus).
 
 == Installation ==
 
@@ -66,6 +61,9 @@ This plugin add a small css code to your website, to remove it please add the co
 add_filter( 'cwp_use_default_style', '__return_false' );
 `
 
+= Widget does not update with last comments =
+If you use cache plugin, please try to clear the cache or re-save the widget.
+
 == Screenshots ==
 
 1. Widgets output
@@ -76,10 +74,6 @@ add_filter( 'cwp_use_default_style', '__return_false' );
 
 == Changelog ==
 
-= 1.0.7 - May 13, 2018 =
-* Maintenance update
-* Fixed exclude ping somehow not working
-* Support live preview in Customizer
-
-= 1.0.6 - Oct 19, 2017 =
-* Support WordPress 4.8.2
+= 1.0.8 - March 05, 2019 =
+* Support WordPress 5.1
+* Added: Default style to reset theme style

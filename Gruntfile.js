@@ -68,10 +68,10 @@ module.exports = function( grunt ) {
 					type: 'wp-plugin', // Type of project (wp-plugin or wp-theme).
 					updateTimestamp: true, // Whether the POT-Creation-Date should be updated without other changes.
 					processPot: function( pot, options ) {
-						pot.headers[ 'report-msgid-bugs-to' ] = 'https://www.theme-junkie.com/contact/';
+						pot.headers[ 'report-msgid-bugs-to' ] = 'https://idenovasi.com/contact/';
 						pot.headers[ 'plural-forms' ] = 'nplurals=2; plural=n != 1;';
-						pot.headers[ 'last-translator' ] = 'Theme Junkie\n';
-						pot.headers[ 'language-team' ] = 'Theme Junkie\n';
+						pot.headers[ 'last-translator' ] = 'Idenovasi\n';
+						pot.headers[ 'language-team' ] = 'Idenovasi\n';
 						pot.headers[ 'x-poedit-basepath' ] = '..\n';
 						pot.headers[ 'x-poedit-language' ] = 'English\n';
 						pot.headers[ 'x-poedit-country' ] = 'UNITED STATES\n';
@@ -88,9 +88,13 @@ module.exports = function( grunt ) {
 	} );
 
 	// Production task
-	grunt.registerTask( 'prod', [
+	grunt.registerTask( 'build', [
 		'makepot',
-		'copy',
+		'copy'
+	] );
+
+	// Production task
+	grunt.registerTask( 'package', [
 		'compress'
 	] );
 

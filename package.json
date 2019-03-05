@@ -1,8 +1,8 @@
 {
   "name": "comments-widget-plus",
-  "version": "1.0.6",
-  "author": "Theme Junkie",
-  "homepage": "https://www.theme-junkie.com/",
+  "version": "1.0.8",
+  "author": "Idenovasi",
+  "homepage": "https://idenovasi.com/",
   "licenses": [
     {
       "type": "GPL",
@@ -10,10 +10,10 @@
     }
   ],
   "devDependencies": {
-    "grunt": "~1.0.1",
-    "grunt-wp-i18n": "^1.0.0",
+    "grunt": "~1.0.3",
+    "grunt-wp-i18n": "^1.0.3",
     "jit-grunt": "^0.10.0",
-    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-compress": "^1.4.3",
     "grunt-contrib-copy": "^1.0.0"
   }
