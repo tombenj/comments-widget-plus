@@ -4,7 +4,7 @@
  * Plugin URI:   https://github.com/idenovasi/comments-widget-plus
  * Description:  Enables custom recent comments widget with extra features.
  * Version:      1.0.8
- * Author:       Satrya
+ * Author:       Idenovasi
  * Author URI:   https://idenovasi.com/
  * Author Email: satrya@idenovasi.com
  * Text Domain:  comments-widget-plus
