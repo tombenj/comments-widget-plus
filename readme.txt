@@ -1,8 +1,8 @@
 === Recent Comments Widget Plus ===
 Contributors: idenovasi, satrya
 Tags: recent comments, widget, recent comments widget, excerpt, avatar, sidebar, comments, pingback, trackback
-Requires at least: 4.0
-Tested up to: 5.1
+Requires at least: 4.5
+Tested up to: 5.2.2
 Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -27,9 +27,8 @@ This plugin will enable a custom and advanced **recent comments widget**. Allows
 
 = Support Me =
 
-* Purchase or download my [WordPress themes](https://wp.idenovasi.com/).
-* Purchase my [Services](https://www.fiverr.com/idenovasi).
-* Try another [WordPress plugin](https://profiles.wordpress.org/idenovasi/#content-plugins) from me.
+* I am a freelance WordPress designer & developer, hire me! [https://idenovasi.com/](https://idenovasi.com/).
+* Try another [WordPress plugins](https://profiles.wordpress.org/idenovasi/#content-plugins) from me.
 * Contribute on [Github](https://github.com/idenovasi/comments-widget-plus).
 
 == Installation ==
