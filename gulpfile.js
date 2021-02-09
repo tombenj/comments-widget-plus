@@ -18,6 +18,7 @@ function copyFiles() {
 		"!dist/**",
 		"!sass/**",
 		"!.git/**",
+		"!.github/**",
 		"!gulpfile.js",
 		"!package.json",
 		"!package-lock.json",
