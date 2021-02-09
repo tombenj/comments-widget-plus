@@ -1,9 +1,10 @@
 <?php
+
 /**
  * Plugin Name:  Comments Widget Plus
- * Plugin URI:   https://github.com/idenovasi/comments-widget-plus
+ * Plugin URI:   https://idenovasi.com/projects/comments-widget-plus/
  * Description:  Enables custom recent comments widget with extra features.
- * Version:      1.0.8
+ * Version:      1.1.0
  * Author:       Idenovasi
  * Author URI:   https://idenovasi.com/
  * Author Email: satrya@idenovasi.com
@@ -14,110 +15,106 @@
  */
 
 // Exit if accessed directly
-if ( ! defined( 'ABSPATH' ) ) exit;
+if (!defined('ABSPATH')) exit;
 
-if ( ! class_exists( 'Comments_Widget_Plus' ) ) {
+if (!class_exists('Comments_Widget_Plus')) {
 
-	class Comments_Widget_Plus {
+    class Comments_Widget_Plus {
 
-		/**
-		 * PHP5 constructor method.
-		 *
-		 * @since  1.0.0
-		 */
-		public function __construct() {
+        /**
+         * PHP5 constructor method.
+         *
+         * @since  1.0.0
+         */
+        public function __construct() {
 
-			// Set the constants needed by the plugin.
-			add_action( 'plugins_loaded', array( &$this, 'constants' ), 1 );
+            // Set the constants needed by the plugin.
+            add_action('plugins_loaded', array(&$this, 'constants'), 1);
 
-			// Internationalize the text strings used.
-			add_action( 'plugins_loaded', array( &$this, 'i18n' ), 2 );
+            // Internationalize the text strings used.
+            add_action('plugins_loaded', array(&$this, 'i18n'), 2);
 
-			// Load the functions files.
-			add_action( 'plugins_loaded', array( &$this, 'includes' ), 3 );
+            // Load the functions files.
+            add_action('plugins_loaded', array(&$this, 'includes'), 3);
 
-			// Register widget.
-			add_action( 'widgets_init', array( &$this, 'register_widget' ) );
+            // Register widget.
+            add_action('widgets_init', array(&$this, 'register_widget'));
 
-			// Loads admin style & script.
-			add_action( 'admin_enqueue_scripts', array( &$this, 'admin_scripts' ) );
-			add_action( 'customize_controls_enqueue_scripts', array( &$this, 'admin_scripts' ) );
+            // Loads admin style & script.
+            add_action('admin_enqueue_scripts', array(&$this, 'admin_scripts'));
+            add_action('customize_controls_enqueue_scripts', array(&$this, 'admin_scripts'));
 
-			// Loads frontend style.
-			add_action( 'wp_enqueue_scripts', array( &$this, 'frontend_scripts' ) );
+            // Loads frontend style.
+            add_action('wp_enqueue_scripts', array(&$this, 'frontend_scripts'));
+        }
 
-		}
+        /**
+         * Defines constants used by the plugin.
+         *
+         * @since  1.0.0
+         */
+        public function constants() {
 
-		/**
-		 * Defines constants used by the plugin.
-		 *
-		 * @since  1.0.0
-		 */
-		public function constants() {
+            // Set constant path to the plugin directory.
+            define('CWP_DIR', trailingslashit(plugin_dir_path(__FILE__)));
 
-			// Set constant path to the plugin directory.
-			define( 'CWP_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
+            // Set the constant path to the plugin directory URI.
+            define('CWP_URI', trailingslashit(plugin_dir_url(__FILE__)));
 
-			// Set the constant path to the plugin directory URI.
-			define( 'CWP_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
+            // Set the constant path to the includes directory.
+            define('CWP_INCLUDES', CWP_DIR . trailingslashit('includes'));
 
-			// Set the constant path to the includes directory.
-			define( 'CWP_INCLUDES', CWP_DIR . trailingslashit( 'includes' ) );
+            // Set the constant path to the assets directory.
+            define('CWP_ASSETS', CWP_URI . trailingslashit('assets'));
+        }
 
-			// Set the constant path to the assets directory.
-			define( 'CWP_ASSETS', CWP_URI . trailingslashit( 'assets' ) );
+        /**
+         * Loads the translation files.
+         *
+         * @since  1.0.0
+         */
+        public function i18n() {
+            load_plugin_textdomain('comments-widget-plus', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+        }
 
-		}
+        /**
+         * Loads the initial files needed by the plugin.
+         *
+         * @since  1.0.0
+         */
+        public function includes() {
+            require_once(CWP_INCLUDES . 'functions.php');
+            require_once(CWP_INCLUDES . 'widget.php');
+        }
 
-		/**
-		 * Loads the translation files.
-		 *
-		 * @since  1.0.0
-		 */
-		public function i18n() {
-			load_plugin_textdomain( 'comments-widget-plus', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-		}
+        /**
+         * Register the widget.
+         *
+         * @since  1.0.0
+         */
+        public function register_widget() {
+            register_widget('Comments_Widget_Plus_Widget');
+        }
 
-		/**
-		 * Loads the initial files needed by the plugin.
-		 *
-		 * @since  1.0.0
-		 */
-		public function includes() {
-			require_once( CWP_INCLUDES . 'functions.php' );
-			require_once( CWP_INCLUDES . 'widget.php' );
-		}
+        /**
+         * Loads custom style & script for the widget settings.
+         *
+         * @since  1.0.0
+         */
+        public function admin_scripts() {
+            wp_enqueue_style('cwp-admin-style', trailingslashit(CWP_ASSETS) . 'css/cwp-admin.css');
+            wp_enqueue_script('cwp-admin-script', trailingslashit(CWP_ASSETS) . 'js/cwp-admin.js', array('jquery-ui-tabs'));
+        }
 
-		/**
-		 * Register the widget.
-		 *
-		 * @since  1.0.0
-		 */
-		public function register_widget() {
-			register_widget( 'Comments_Widget_Plus_Widget' );
-		}
-
-		/**
-		 * Loads custom style & script for the widget settings.
-		 *
-		 * @since  1.0.0
-		 */
-		public function admin_scripts() {
-			wp_enqueue_style( 'cwp-admin-style', trailingslashit( CWP_ASSETS ) . 'css/cwp-admin.css' );
-			wp_enqueue_script( 'cwp-admin-script', trailingslashit( CWP_ASSETS ) . 'js/cwp-admin.js', array( 'jquery-ui-tabs' ) );
-		}
-
-		/**
-		 * Loads frontend style.
-		 *
-		 * @since  1.0.0
-		 */
-		public function frontend_scripts() {
-			wp_enqueue_style( 'cwp-style', trailingslashit( CWP_ASSETS ) . 'css/cwp.css' );
-		}
-
-	}
-
+        /**
+         * Loads frontend style.
+         *
+         * @since  1.0.0
+         */
+        public function frontend_scripts() {
+            wp_enqueue_style('cwp-style', trailingslashit(CWP_ASSETS) . 'css/cwp.css');
+        }
+    }
 }
 
 new Comments_Widget_Plus;

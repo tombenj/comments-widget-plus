@@ -1,6 +1,6 @@
 {
   "name": "comments-widget-plus",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "author": "Idenovasi",
   "homepage": "https://idenovasi.com/",
   "licenses": [
@@ -10,11 +10,9 @@
     }
   ],
   "devDependencies": {
-    "grunt": "~1.0.3",
-    "grunt-wp-i18n": "^1.0.3",
-    "jit-grunt": "^0.10.0",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-compress": "^1.4.3",
-    "grunt-contrib-copy": "^1.0.0"
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-wp-pot": "^2.5.0",
+    "gulp-zip": "^5.0.2"
   }
 }

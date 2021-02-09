@@ -1,9 +1,11 @@
 === Recent Comments Widget Plus ===
 Contributors: idenovasi, satrya
+Donate link: https://paypal.me/satrya
 Tags: recent comments, widget, recent comments widget, excerpt, avatar, sidebar, comments, pingback, trackback
-Requires at least: 4.5
-Tested up to: 5.3
-Stable tag: 1.0.8
+Requires at least: 4.8
+Tested up to: 5.6.1
+Requires PHP: 7.2
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +13,7 @@ Provides custom recent comments widget with extra features such as display avata
 
 == Description ==
 
-This plugin will enable a custom and advanced **recent comments widget**. Allows you to display a list of the most recent comments with avatar and excerpt, you can also choose which to show newer comments first or older comments first and choose comments from any post type.
+This plugin will enable a custom and advanced [recent comments widget](https://idenovasi.com/projects/comments-widget-plus/). Allows you to display a list of the most recent comments with avatar and excerpt, you can also choose which to show newer comments first or older comments first and choose comments from any post type.
 
 = Features Include =
 
@@ -25,11 +27,11 @@ This plugin will enable a custom and advanced **recent comments widget**. Allows
 * Custom CSS class.
 * Multiple widgets.
 
-= Support Me =
+= Support this project =
 
-* I am a freelance WordPress designer & developer, hire me! [https://idenovasi.com/](https://idenovasi.com/).
-* Try another [WordPress plugins](https://profiles.wordpress.org/idenovasi/#content-plugins) from me.
-* Contribute on [Github](https://github.com/idenovasi/comments-widget-plus).
+* [Translate to your language](https://translate.wordpress.org/projects/wp-plugins/comments-widget-plus/).
+* Contribute on [Github](https://github.com/satrya/comments-widget-plus).
+* [Donate](https://paypal.me/satrya).
 
 == Installation ==
 
@@ -73,6 +75,5 @@ If you use cache plugin, please try to clear the cache or re-save the widget.
 
 == Changelog ==
 
-= 1.0.8 - March 05, 2019 =
-* Support WordPress 5.1
-* Added: Default style to reset theme style
+= 1.0.9 - Feb 09, 2021 =
+* Maintenance update
