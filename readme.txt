@@ -2,10 +2,10 @@
 Contributors: idenovasi, satrya
 Donate link: https://paypal.me/satrya
 Tags: recent comments, widget, recent comments widget, excerpt, avatar, sidebar, comments, pingback, trackback
-Requires at least: 4.8
-Tested up to: 5.6.1
+Requires at least: 5.6
+Tested up to: 5.8
 Requires PHP: 7.2
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,12 +68,8 @@ If you use cache plugin, please try to clear the cache or re-save the widget.
 == Screenshots ==
 
 1. Widgets output
-2. General settings
-3. Comments settings
-4. Avatar settings
-5. Excerpt settings
 
 == Changelog ==
 
-= 1.0.9 - Feb 09, 2021 =
-* Maintenance update
+= 1.2.0 =
+* Support new Widget block.

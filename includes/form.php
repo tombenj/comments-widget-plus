@@ -8,42 +8,11 @@
 if (!defined('ABSPATH')) exit;
 ?>
 
-<script>
-    jQuery(document).ready(function($) {
+<div class="cwp-options">
 
-        // Cache selector in a variable
-        // to improve speed.
-        var $tabs = $(".cwp-form-tabs");
+    <div class="cwp-options__wrapper">
 
-        // Initialize the jQuery UI tabs
-        $tabs.tabs({
-            active: $.cookie("activetab"),
-            activate: function(event, ui) {
-                $.cookie("activetab", ui.newTab.index(), {
-                    expires: 10
-                });
-            }
-        }).addClass("ui-tabs-vertical");
-
-        // Add custom class
-        $tabs.closest(".widget-inside").addClass("cwp-bg");
-
-    });
-</script>
-
-<div class="cwp-form-tabs">
-
-    <ul class="cwp-tabs">
-        <li><a href="#tab-1"><?php esc_html_e('General', 'comments-widget-plus'); ?></a></li>
-        <li><a href="#tab-2"><?php esc_html_e('Comments', 'comments-widget-plus'); ?></a></li>
-        <li><a href="#tab-3"><?php esc_html_e('Avatar', 'comments-widget-plus'); ?></a></li>
-        <li><a href="#tab-4"><?php esc_html_e('Excerpt', 'comments-widget-plus'); ?></a></li>
-        <li><a href="#tab-5"><?php esc_html_e('Thank You', 'comments-widget-plus'); ?></a></li>
-    </ul>
-
-    <div class="cwp-tabs-content">
-
-        <div id="tab-1" class="cwp-tab-content">
+        <div class="cwp-options__option">
             <p>
                 <label for="<?php echo $this->get_field_id('title'); ?>">
                     <?php esc_html_e('Title', 'comments-widget-plus'); ?>
@@ -65,9 +34,9 @@ if (!defined('ABSPATH')) exit;
                 <input class="widefat" id="<?php echo $this->get_field_id('css_class'); ?>" name="<?php echo $this->get_field_name('css_class'); ?>" type="text" value="<?php echo sanitize_html_class($instance['css_class']); ?>" />
             </p>
 
-        </div><!-- #tab-1 -->
+        </div>
 
-        <div id="tab-2" class="cwp-tab-content">
+        <div class="cwp-options__option">
 
             <p>
                 <label for="<?php echo $this->get_field_id('post_type'); ?>">
@@ -113,9 +82,9 @@ if (!defined('ABSPATH')) exit;
                 </label>
             </p>
 
-        </div><!-- #tab-2 -->
+        </div>
 
-        <div id="tab-3" class="cwp-tab-content">
+        <div class="cwp-options__option">
 
             <p>
                 <input class="checkbox" type="checkbox" <?php checked($instance['avatar'], 1); ?> id="<?php echo $this->get_field_id('avatar'); ?>" name="<?php echo $this->get_field_name('avatar'); ?>" />
@@ -141,9 +110,9 @@ if (!defined('ABSPATH')) exit;
                 </select>
             </p>
 
-        </div><!-- #tab-3 -->
+        </div>
 
-        <div id="tab-4" class="cwp-tab-content">
+        <div class="cwp-options__option">
 
             <p>
                 <input id="<?php echo $this->get_field_id('excerpt'); ?>" name="<?php echo $this->get_field_name('excerpt'); ?>" type="checkbox" <?php checked($instance['excerpt']); ?> />
@@ -159,19 +128,15 @@ if (!defined('ABSPATH')) exit;
                 <input class="widefat" id="<?php echo $this->get_field_id('excerpt_limit'); ?>" name="<?php echo $this->get_field_name('excerpt_limit'); ?>" type="number" step="1" min="0" value="<?php echo (int)($instance['excerpt_limit']); ?>" />
             </p>
 
-        </div><!-- #tab-4 -->
+        </div>
 
-        <div id="tab-5" class="cwp-tab-content">
-
-            <p>Thank you for using this plugin, I hope you enjoy it and don't forget to <a href="https://wordpress.org/support/plugin/comments-widget-plus/reviews/" target="_blank">leave a 5 star review</a>.</p>
-            <p>If you want to support me, you can:</p>
-            <ul>
-                <li>• Purchase my <a href="https://www.fiverr.com/idenovasi" target="_blank">Gigs</a> on Fiverr.</li>
-                <li>• Purchase or download my <a href="https://wp.idenovasi.com/" target="_blank">WordPress themes</a>.</li>
-            </ul>
-
-        </div><!-- #tab-4 -->
+        <div class="cwp-options__option cwp-info">
+            <p>If you want to support this plugin, please consider donating to help keep it going. I truly appreciate any contribution.</p>
+            <p>
+                <a href="https://paypal.me/satrya" target="_blank" rel="noreferrer noopener" class="button-primary" style="color: #fff;">Donate Now</a>
+            </p>
+        </div>
 
     </div>
 
-</div><!-- .cwp-form-tabs -->
+</div><!-- .cwp-options -->

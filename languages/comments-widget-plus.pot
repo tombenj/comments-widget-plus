@@ -13,99 +13,79 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: includes/form.php:37
-msgid "General"
-msgstr ""
-
-#: includes/form.php:38
-msgid "Comments"
-msgstr ""
-
-#: includes/form.php:39
-msgid "Avatar"
-msgstr ""
-
-#: includes/form.php:40
-msgid "Excerpt"
-msgstr ""
-
-#: includes/form.php:41
-msgid "Thank You"
-msgstr ""
-
-#: includes/form.php:49
+#: includes/form.php:18
 msgid "Title"
 msgstr ""
 
-#: includes/form.php:56
+#: includes/form.php:25
 msgid "Title URL"
 msgstr ""
 
-#: includes/form.php:63
+#: includes/form.php:32
 msgid "CSS Class"
 msgstr ""
 
-#: includes/form.php:74
+#: includes/form.php:43
 msgid "Post Type"
 msgstr ""
 
-#: includes/form.php:77
+#: includes/form.php:46
 msgid "All"
 msgstr ""
 
-#: includes/form.php:86
+#: includes/form.php:55
 msgid "Number of comments to show"
 msgstr ""
 
-#: includes/form.php:93
+#: includes/form.php:62
 msgid "Offset"
 msgstr ""
 
-#: includes/form.php:96
+#: includes/form.php:65
 msgid "Number of comments to skip"
 msgstr ""
 
-#: includes/form.php:101
+#: includes/form.php:70
 msgid "Show"
 msgstr ""
 
-#: includes/form.php:104
+#: includes/form.php:73
 msgid "Newer comments first"
 msgstr ""
 
-#: includes/form.php:105
+#: includes/form.php:74
 msgid "Older comments first"
 msgstr ""
 
-#: includes/form.php:112
+#: includes/form.php:81
 msgid "Exclude pingback and trackback"
 msgstr ""
 
-#: includes/form.php:123
+#: includes/form.php:92
 msgid "Display Avatar"
 msgstr ""
 
-#: includes/form.php:129
+#: includes/form.php:98
 msgid "Avatar Size"
 msgstr ""
 
-#: includes/form.php:136
+#: includes/form.php:105
 msgid "Avatar Type"
 msgstr ""
 
-#: includes/form.php:139
+#: includes/form.php:108
 msgid "Rounded"
 msgstr ""
 
-#: includes/form.php:140
+#: includes/form.php:109
 msgid "Square"
 msgstr ""
 
-#: includes/form.php:151
+#: includes/form.php:120
 msgid "Display Comment Excerpt"
 msgstr ""
 
-#: includes/form.php:157
+#: includes/form.php:126
 msgid "Excerpt Length"
 msgstr ""
 

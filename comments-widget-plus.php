@@ -4,10 +4,11 @@
  * Plugin Name:  Comments Widget Plus
  * Plugin URI:   https://idenovasi.com/projects/comments-widget-plus/
  * Description:  Enables custom recent comments widget with extra features.
- * Version:      1.1.0
+ * Version:      1.2.0
+ * Requires at least: 5.6
+ * Requires PHP: 7.2
  * Author:       Idenovasi
  * Author URI:   https://idenovasi.com/
- * Author Email: satrya@idenovasi.com
  * Text Domain:  comments-widget-plus
  * Domain Path:  /languages
  * License:      GPL 2.0
@@ -43,6 +44,7 @@ if (!class_exists('Comments_Widget_Plus')) {
             // Loads admin style & script.
             add_action('admin_enqueue_scripts', array(&$this, 'admin_scripts'));
             add_action('customize_controls_enqueue_scripts', array(&$this, 'admin_scripts'));
+            add_action('enqueue_block_editor_assets', array(&$this, 'admin_scripts'));
 
             // Loads frontend style.
             add_action('wp_enqueue_scripts', array(&$this, 'frontend_scripts'));
@@ -103,7 +105,6 @@ if (!class_exists('Comments_Widget_Plus')) {
          */
         public function admin_scripts() {
             wp_enqueue_style('cwp-admin-style', trailingslashit(CWP_ASSETS) . 'css/cwp-admin.css');
-            wp_enqueue_script('cwp-admin-script', trailingslashit(CWP_ASSETS) . 'js/cwp-admin.js', array('jquery-ui-tabs'));
         }
 
         /**
