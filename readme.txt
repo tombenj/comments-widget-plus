@@ -1,19 +1,23 @@
 === Recent Comments Widget Plus ===
-Contributors: idenovasi, satrya
+Contributors: satrya
 Donate link: https://paypal.me/satrya
 Tags: recent comments, widget, recent comments widget, excerpt, avatar, sidebar, comments, pingback, trackback
-Requires at least: 5.6
-Tested up to: 5.8
+Requires at least: 5.8
+Tested up to: 6.0
 Requires PHP: 7.2
-Stable tag: 1.2.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 1.3
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Provides custom recent comments widget with extra features such as display avatar, comment excerpt and much more!
 
 == Description ==
 
-This plugin will enable a custom and advanced [recent comments widget](https://idenovasi.com/projects/comments-widget-plus/). Allows you to display a list of the most recent comments with avatar and excerpt, you can also choose which to show newer comments first or older comments first and choose comments from any post type.
+This plugin will enable a custom and advanced **recent comments widget**. Allows you to display a list of the most recent comments with avatar and excerpt, you can also choose which to show newer comments first or older comments first and choose comments from any post type.
+
+= Support this project =
+
+If you are enjoying this plugin. I would appreciate a cup of coffee to help me keep coding and supporting the project! [Support & donate](https://paypal.me/satrya).
 
 = Features Include =
 
@@ -27,11 +31,10 @@ This plugin will enable a custom and advanced [recent comments widget](https://i
 * Custom CSS class.
 * Multiple widgets.
 
-= Support this project =
+= Links =
 
 * [Translate to your language](https://translate.wordpress.org/projects/wp-plugins/comments-widget-plus/).
-* Contribute on [Github](https://github.com/satrya/comments-widget-plus).
-* [Donate](https://paypal.me/satrya).
+* Contribute or submit issues on [Github](https://github.com/satrya/comments-widget-plus).
 
 == Installation ==
 
@@ -70,6 +73,9 @@ If you use cache plugin, please try to clear the cache or re-save the widget.
 1. Widgets output
 
 == Changelog ==
+
+= 1.3 =
+* **Enchancement:** Code refactor to follow latest WordPress coding standard.
 
 = 1.2.0 =
 * Support new Widget block.
