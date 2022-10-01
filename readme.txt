@@ -5,7 +5,7 @@ Tags: recent comments, widget, recent comments widget, excerpt, avatar, sidebar,
 Requires at least: 5.8
 Tested up to: 6.0
 Requires PHP: 7.2
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -73,6 +73,9 @@ If you use cache plugin, please try to clear the cache or re-save the widget.
 1. Widgets output
 
 == Changelog ==
+
+= 1.3.1 =
+* **Fixed:** Cache issue.
 
 = 1.3 =
 * **Enchancement:** Code refactor to follow latest WordPress coding standard.

@@ -3,7 +3,7 @@
  * Plugin Name:  Comments Widget Plus
  * Plugin URI:   https://idenovasi.com/projects/comments-widget-plus/
  * Description:  Enables custom recent comments widget with extra features.
- * Version:      1.3
+ * Version:      1.3.1
  * Requires at least: 5.8
  * Requires PHP: 7.2
  * Author:       Ga Satrya

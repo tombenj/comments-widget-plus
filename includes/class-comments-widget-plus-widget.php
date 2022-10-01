@@ -120,7 +120,7 @@ class Comments_Widget_Plus_Widget extends WP_Widget {
 			$args['widget_id'] = $this->id;
 		}
 		if ( isset( $cache[ $args['widget_id'] ] ) ) {
-			echo esc_attr( $cache[ $args['widget_id'] ] );
+			echo $cache[ $args['widget_id'] ]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			return;
 		}
 
