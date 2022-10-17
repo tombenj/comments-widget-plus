@@ -124,6 +124,8 @@ class Comments_Widget_Plus_Widget extends WP_Widget {
 			return;
 		}
 
+		ob_start();
+
 		// Get the recent comments.
 		$comments = cwp_get_recent_comments( $instance, $this->id );
 
@@ -150,7 +152,7 @@ class Comments_Widget_Plus_Widget extends WP_Widget {
 		}
 
 		if ( ! $this->is_preview() ) {
-			$cache[ $args['widget_id'] ] = $comments;
+			$cache[ $args['widget_id'] ] = ob_get_flush();
 			wp_cache_set( 'cwp_widget', $cache, 'widget' );
 		}
 	}
